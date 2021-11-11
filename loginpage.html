@@ -1,0 +1,119 @@
+#HTML CODE:
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First_LoginPage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+      
+    <div class="ContainerSS">
+        <h1><i> L O G I N  </i></h1>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <br>
+        <button>Login</button>
+    </div>
+</body>
+
+</html>
+
+
+
+#CSS CODE:
+
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+body {background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSAdI6z4GHjNSCFZ3dX5W0iwZd8xZtnkUBA&usqp=CAU');
+   
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+.ContainerSS {
+    background-color: #0F0F0F;
+  
+    width: 30%;
+    height: 45vh;
+    margin-left: 33%;
+    margin-top: 25vh;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid skyblue;
+}
+@keyframes h1 {
+    from{color: #0a8cf6;}
+    to{color: skyblue;}
+}
+.ContainerSS h1 {
+    
+    position: relative;
+    top: 16%;
+    color: aliceblue;
+    font-family: sans-serif;
+    animation-name: h1;
+    animation:h1 3s infinite;
+   
+}
+
+.ContainerSS input[type='text'] {
+    margin-top: 22%;
+    width: 60%;
+    height: 10%;
+    background-color: #0F0F0F;
+    border: 2px solid #0a8cf6;
+    text-align: center;
+    border-radius: 22px;
+    outline: none;
+    color: #F0F0F0;
+}
+
+.ContainerSS input[type="password"] {
+    margin-top: 4%;
+    color: #F0F0F0;
+    width: 60%;
+    height: 10%;
+    background-color: #0F0F0F;
+    border: 2px solid #0a8cf6;
+    text-align: center;
+    border-radius: 22px;
+    outline: none;
+}
+
+.ContainerSS button {
+    outline: none;
+    width: 30%;
+    margin-top: 5%;
+    height: 5vh;
+    background-color: #0F0F0F;
+    color: white;
+    border: 2px solid #00ccff;
+    border-radius: 18px;
+}
+
+.ContainerSS input[type='text']:hover {
+    transform: scale(1.3);
+    border: 2px solid #09f315;
+    transition: 1.5s;
+}
+
+.ContainerSS input[type='password']:hover {
+    transform: scale(1.3);
+    border: 2px solid #09f315;
+    transition: 1.5s;
+}
+
+.ContainerSS button:hover {
+    background-color: #00ccff;
+    transform: scale(1.2);
+    transition: 1.5s;
+}
